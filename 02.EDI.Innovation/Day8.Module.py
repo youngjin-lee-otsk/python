@@ -8,7 +8,7 @@ students.append('정은')
 students.append('영진')
 students.append('재원')
 students.append('태현')
-print(random.choice(students)) #임의의 대상이 출력됨.
+print(random.sample(students)) #임의의 대상이 출력됨.
 
 #random.sample() / #임의의 대상 둘을 뽑아주는 함수. 
 print(random.sample(students, 2)) #임의의 대상 2개가 출력됨.

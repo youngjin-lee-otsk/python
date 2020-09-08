@@ -40,6 +40,16 @@ my_dict2 = {'이제열3':'남3'}
 print(my_dict['이제열1']) #남1이 출력됨.
 print(my_dict2['이제열3']) #남1이 출력됨.
 
+#응용편 >> 배열(list)값을 객체(Dictionary)의 키값으로 활용하면 가변적인 값들을 가져올 수 있다.
+my_dict3 = {'원정은1':'여1', '원정은2':'여2'}
+my_dict.update(my_dict3)
+jy_list = ['이제열1', '원정은2']
+print(my_dict)
+
+for eachjy in jy_list:
+    print(my_dict[eachjy])
+
+
 my_int1 = 1
 print(type(my_int1)) #int로 인식.
 float(my_int1)

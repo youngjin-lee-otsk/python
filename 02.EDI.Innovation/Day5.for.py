@@ -40,10 +40,12 @@ for int in range(1,10):
 for int in range(1,10):
     print('{}x{}={}'.format(2,int,2*int))
 
-#구구단. 2단 ~ 9단.
+#구구단. 2단 ~ 9단. if 문으로 짝수단의 9단만 출력하기
 for int1 in range(2,10):
-    for int2 in range(1,10):
-        print('{}x{}={}'.format(int1,int2,int1*int2))
+    if int1 % 2 == 0:
+        for int2 in range(1,10):
+            if int2 == 9:
+                print('{}x{}={}'.format(int1,int2,int1*int2))
 
 #Comprehension
 #어렵지만 자주 쓰인다. 소스를 한줄로 표현하는 방법.
@@ -61,4 +63,8 @@ print(odd_numbers)
 odd_numbers = [number for number in numbers if number % 2 ==1]
 print(odd_numbers)
 
+#응용편 화살표 함수처럼 포문이랑 if 절을 약식으로 표현하는 걸로 보임
+members = ['제열1', '영진2', '정은1', '인기2']
+odd_strings = [person for person in members if str(person).__contains__('2')]
+print(odd_strings)
 #과제 : 숫자를 입력받아서 정렬하는 프로그램 작성.
