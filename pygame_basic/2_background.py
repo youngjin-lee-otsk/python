@@ -10,7 +10,7 @@ pygame.display.set_caption("Nado Game") #게임이름
 
 #배경 이미지 불러오기
 
-background = pygame.image.load("C:/python_project/python/pygame_basic/abc.png")
+background = pygame.image.load("C:/py/python/pygame_basic/abc.png")
 
 #이벤트 루프
 running = True #게임이 진행중인가?
