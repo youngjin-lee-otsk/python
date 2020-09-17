@@ -61,7 +61,7 @@ to_x = 0
 to_y = 0
 
 #이동 속도
-character_speed = 0.4
+character_speed = 0.3
 Enermy_speed = 3
 
 # 티모1
@@ -239,11 +239,11 @@ while running:
 
     #10초마다 티모 속도증가 & 점수 증가치 증가
 
-    if timedelta(seconds=10) <= datetime.now() - last_moved_time:
-        Enermy_speed += 0.8
-        score += 50
-        pygame.mixer.Sound.play(voice)
-        last_moved_time = datetime.now()
+    if timedelta(seconds=10) <= datetime.now() - last_moved_time: #시작시간에서 현재시간 인터벌체크
+        Enermy_speed += 0.8 #티모속도 증가
+        score += 50 #획득 점수 가중치
+        pygame.mixer.Sound.play(voice) #야스오 음성
+        last_moved_time = datetime.now() #시작시간을 다시 현재로 수정
 
     pygame.display.update() # 게임 화면을 다시 그리기!
 
