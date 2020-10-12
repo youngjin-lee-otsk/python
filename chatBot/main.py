@@ -60,6 +60,7 @@ ts: {ts}
 """)
 
 # 기택님 너무 멋있어.
+# KYS JJANG
 
 # Bot으로 등록할 댓글 메시지 문구
 message = f"""
